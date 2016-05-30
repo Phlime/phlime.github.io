@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+  <title>index</title>
+  <link rel="stylesheet" href="../css/lib.css">
+  <link rel="stylesheet" href="../css/app.css">
+  <script src="../js/lib.js" defer="true"></script>
+  <script src="../js/app.js" defer="true"></script>
+</head>
+<body class="order">
+  <form id="orderForm" action="/" method="post">
+    <div class="weui_cells_title">Dr.Drink信息</div>
+    <div class="weui_cells weui_cells_form">
+      <div class="weui_cell">
+        <div class="weui_cell_hd">
+          <label class="weui_label">邮编号码</label>
+        </div>
+        <div class="weui_cell_bd weui_cell_primary">
+          <input id="car-license" name="car-license" class="weui_input" type="text" placeholder="请输入邮编号码">
+        </div>
+      </div>
+    </div>
+    <div class="weui_cells_title">洗车地址</div>
+    <div class="weui_cells weui_cells_form">
+      <div class="weui_cell weui_cell_select weui_select_before">
+        <div class="weui_cell_hd">
+         <select class="weui_select" name="city">
+            <option value="1">上海市</option>
+            <option value="2">北京市</option>
+            <option value="3">深圳市</option>
+            <option value="4">广州市</option>
+          </select>
+        </div>
+        <div class="weui_cell_hd">
+          <select class="weui_select" name="district">
+            <option value="1">宝山区</option>
+            <option value="2">静安区</option>
+            <option value="3">杨浦区</option>
+            <option value="4">普陀区</option>
+          </select>
+        </div>
+        <div class="weui_cell_hd street">
+          <select class="weui_select" name="street">
+            <option value="1">AA街道</option>
+            <option value="2">BB街道</option>
+            <option value="3">CC街道</option>
+            <option value="4">DD街道</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="weui_cells_title">详细地址</div>
+    <div class="weui_cells weui_cells_form">
+      <div class="weui_cell">
+        <div class="weui_cell_bd weui_cell_primary">
+          <input id="address" name="address" class="weui_input" type="text" placeholder="请输入详细地址">
+        </div>
+      </div>
+    </div>
+    <div class="weui_cells_title">服务类型</div>
+    <div class="weui_cells weui_cells_form">
+      <div class="weui_cell weui_cell_select">
+        <div class="weui_cell_bd weui_cell_primary">
+          <select class="weui_select" name="type">
+            <option selected value="1">普通快递</option>
+            <option value="2">冷藏快递</option>
+            <option value="3">冷冻快递</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="weui_cells weui_cells_form">
+      <div class="weui_cell">
+        <div class="weui_cell_hd"><label for="" class="weui_label">时间</label></div>
+        <div class="weui_cell_bd weui_cell_primary datetime">
+          <input id="date" name="date" class="weui_input" type="datetime-local" value="" placeholder="请选择一周以内的时间">
+        </div>
+      </div>
+    </div>
+    <div class="weui_cells_title">验证信息</div>
+    <div class="weui_cells weui_cells_form">
+      <div class="weui_cell">
+        <div class="weui_cell_hd"><label class="weui_label">手机</label></div>
+        <div class="weui_cell_bd weui_cell_primary">
+          <input name="phone" id="phone" class="weui_input" type="number" placeholder="请输入手机号码">
+        </div>
+        <div class="weui_cell_hd">
+          <label class="weui_label get-code">获取验证码</label>
+        </div>
+      </div>
+      <div class="weui_cell">
+        <div class="weui_cell_hd"><label class="weui_label">验证码</label></div>
+        <div class="weui_cell_bd weui_cell_primary">
+          <input name="vscode" id="vscode" class="weui_input" type="number" placeholder="请输入验证码">
+        </div>
+      </div>
+    </div>
+    <div class="weui_cells_title">备注信息</div>
+    <div class="weui_cells weui_cells_form">
+      <div class="weui_cell">
+        <div class="weui_cell_bd weui_cell_primary">
+          <textarea class="weui_textarea" placeholder="请输入备注"></textarea>
+        </div>
+      </div>
+    </div>
+    <div class="weui_btn_area">
+      <button type="submit" class="weui_btn weui_btn_primary" href="javascript:">确认订单</button>
+    </div>
+  </form>
+  <div class="error-msg"></div>
+</body>
+</html>
