@@ -132,7 +132,7 @@ $(document).ready(function () {
         fields: {
           '#car-license': {
             required: true,
-            message: '请正确填写车牌号',
+            message: '请正确填写邮编号码',
             test: happy.carLicense,
             errorTarget: '.error-msg'
           },
