@@ -9,6 +9,9 @@
     <link rel="stylesheet" type="text/css" href="css/test.css">
     <script src="js/jquery.js"></script>
     <script src="js/test.js"></script>
+    <script src="js/jquery.sliphover.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/set1.css">
+
   </head>
   <body>
     <div class="bar">
@@ -25,7 +28,7 @@
     <div class="content1">
       
       <div class="list">
-        <a href="#" class="list-kind">红茶</a>
+        <a href="#" class="list-kind" id="test1">红茶</a>
         <a href="#" class="list-kind">绿茶</a>
         <a href="#" class="list-kind">红酒</a>
         <a href="#" class="list-kind">洋酒</a>
@@ -40,20 +43,37 @@
       <div class="line1">
         <div class="line1-list">
           <ul>
-            <li><div class="line1-list-li"><a href="#">打开一天的正确方式></a></div> </li>
-            <li><div class="line1-list-li"><a href="#">找到最适合你的鸡尾酒></a></div> </li>
-            <li><div class="line1-list-li"><a href="#">法国中世纪八件套></a></div> </li>
-            <li><div class="line1-list-li"><a href="#">夏天的清凉回忆></a></div> </li>
-            <li><div class="line1-list-li"><a href="#">论一顿正经的早餐></a></div> </li>
-            <li><div class="line1-list-li"><a href="#">老男人该喝什么></a></div> </li>
+            <li><div class="line1-list-li" id="l1-1"><a href="#">打开一天的正确方式></a></div> </li>
+            <li><div class="line1-list-li" id="l1-2"><a href="#">找到最适合你的鸡尾酒></a></div> </li>
+            <li><div class="line1-list-li" id="l1-3"><a href="#">法国中世纪八件套></a></div> </li>
+            <li><div class="line1-list-li" id="l1-4"><a href="#">夏天的清凉回忆></a></div> </li>
+            <li><div class="line1-list-li" id="l1-5"><a href="#">论一顿正经的早餐></a></div> </li>
+            <li><div class="line1-list-li" id="l1-6"><a href="#">老男人该喝什么></a></div> </li>
           </ul>
         </div>
         <div class="line1-pic">
+
+        <div class="grid">
+          <figure class="effect-sadie">
+            <img src="pic/line1-1.jpg" id="line1-pic-change"/>
+            <figcaption>
+              <div>
+                <h2> <span></span></h2>
+                <p>你确定不需要一杯现煮咖啡，来温习下昨晚欧冠的激动？</p>
+              </div>
+              <a href="#">View more</a>
+            </figcaption>     
+          </figure>
+        </div>
+  
         </div>
       </div>
       <div class="line2">
-        <div class="line2-head">最近新品</div>
-        <div class="line2-box">
+        <div class="line2-head" >最近新品</div>
+
+    
+        
+        <div class="line2-box" class="hvr-grow-shadow">
           <a href="#" class="line2-box-pic"><img src="pic/line2-1.jpg"></a>
           <a href="#" class="line2-box-p"><p>My olive tree</p><p class="price1">￥299</p></a>
         </div>
@@ -70,6 +90,11 @@
           <a href="#" class="line2-box-p"><p>“命运”纯米吟酿</p><p class="price1">￥1099</p></a>
         </div>
       </div>
+
+
+
+
+
       <div class="line3">
         <div class="line3-head">明星单品</div>
         <div class="line3-box">
@@ -91,10 +116,18 @@
       </div>
       <div class="line4">
         <div class="line4-head">引起围观</div>
+
+
         <div class="line4-box">
-          <a href="#" class="line4-box-pic"><img src="pic/line4-1.jpg"></a>
-          <a href="#" class="line4-box-p"><p>和风淡苦丁茶</p><p class="price1">￥39</p></a>
+          <figure>
+            <a href="#" class="line4-box-pic"><img src="pic/line4-1.jpg" ></a>
+            <figcaption>
+              <a href="#" class="line4-box-p"><p>和风淡苦丁茶</p><p class="price1">￥39</p></a>
+            </figcaption>
+          </figure>
         </div>
+
+
         <div class="line4-box">
           <a href="#" class="line4-box-pic"><img src="pic/line4-2.jpg"></a>
           <a href="#" class="line4-box-p"><p>螺旋藻糖胶</p><p class="price1">￥299</p></a>
@@ -108,28 +141,36 @@
           <a href="#" class="line4-box-p"><p>La melana矿泉水</p><p class="price1">￥59</p></a>
         </div>
       </div>
-      <div class="line5">
+      <div class="line5"   id="slip1" >
         <div class="line5-head">本期专题</div>
-        <div class="line5-left">
-          <div class="line5-left-title"><a href="#">论一顿正经的早餐</a></div>
+
+        <div class="line5-left" >
+          <img src="pic/line5-left.jpg"  title="<p style='font-size: 1.2em;font-weight: 200;'>论一顿正经的早餐<br><br>上次正正经经吃完一盅两件已经是什么时候了？</p>"/>
         </div>
+
         <div class="line5-right">
-          <div class="line5-right-title"><a href="#">打开一天的正确方式</a></div>
+          <img src="pic/line5-right.jpg"  title="<p style='font-size: 1.2em;font-weight: 200;'>打开一天的正确方式<br><br>你确定不需要一杯现煮咖啡，来温习下昨晚欧冠的激动？</p>"/>
+          
         </div>
+
       </div>
-      <div class="line6">
-        <div class="line6-head"></div>
+
+      <div class="line6"  id="slip2" >
+        
         <div class="line6-left">
-          <div class="line6-left-title"><a href="#">找到最适合你的鸡尾酒</a></div>
+          <img src="pic/line6-left.jpg" title="<p style='font-size: 1.2em;font-weight: 200;'>找到最适合你的鸡尾酒<br><br>离凌晨还有三个小时，Margarita还是金汤力？</p>"/>
+
         </div>
-        <div class="line6-right">
-          <div class="line6-right-title"><a href="#">老男人该喝什么</a></div>
+        <div class="line6-right">        
+        <img src="pic/line6-right.jpg" title="<p style='font-size: 1.2em;font-weight: 200;'>老男人该喝什么<br><br>把酒架底下的啤酒瓶都扔到后巷去，今天我们来喝点成熟的玩意儿</p>"/>
+
         </div>
-      </div>
-      <div class="line7">
-        <div class="line7-head"></div>
-        <div class="line7-title"><a href="#">法国中世纪八件套</a></div>
-      </div>
+        </div>
+      <div class="line7"  id="slip3" >
+        
+          <img src="pic/line7.jpg" title="<p style='font-size: 1.2em;font-weight: 200;'>法国中世纪八件套<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;从古时起，面包已是欧洲的主食，面条、麦片亦常见于民间；常用调味料有浓酸果汁、酒和醋，伴以白糖和蜜糖，令当时的菜式偏向酸甜。一如不少古文明，肉类同样是富人之食，而以猪肉和鸡肉最常见，牛因为有农业价值而较少入馔。当时的欧洲人亦喜好杏仁茶......</p>"/>
+
+        </div>
       
       <div class="line8">
         <div class="line8-head"></div><br>
@@ -172,12 +213,28 @@
       </div>
       
     </div>
-    
+<div class="container">
+        <div class="grid">
+          <figure class="effect-sadie">
+            <img src="pic/line1-1.jpg"/>
+            <figcaption>
+              <div>
+                <h2>Nice <span>Lily</span></h2>
+                <p>Lily likes to play with crayons and pencils</p>
+              </div>
+              <a href="#">View more</a>
+            </figcaption>     
+          </figure>
+        </div>
+  </div>
     
     <div class="foot">
       <div class="foot-sign">
         <p id="foot-sign-p">2016&nbsp;@&nbsp;Phlime</p>
       </div>
     </div>
+
+
+
   </body>
 </html>

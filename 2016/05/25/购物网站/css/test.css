@@ -110,7 +110,7 @@ background: transparent;
 	float: left;
 	font-size: 1.25em;
 	font-weight: 200;
-	color: #8b4513
+
 }
 .line1-list-li {
 	padding: 25px;
@@ -123,10 +123,15 @@ background: transparent;
 	width: 900px;
 	height: 500px;
 	float: right;
-	background: url(../pic/line1-1.jpg) no-repeat;
-	background-size: cover;
-}
+	/*background: url(../pic/line1-1.jpg) no-repeat;
+	background-size: cover;*/
 
+}
+#line1-pic-invisble {
+	width: 900px;
+	height: 500px;
+
+}
 /*line2*/
 .line2 {
 	margin-top: 50px;
@@ -142,10 +147,13 @@ background: transparent;
 	color: orange;
 }
 .line2-box {
-	width: 300px;
-	height: 400px;
+	width: 298px;
+	height: 398px;
 	float: left;
 	overflow: hidden;
+}
+.line2-box:hover{
+	border:1px solid orange;
 }
 .line2-box-pic {
 	width: 300px;
@@ -172,12 +180,14 @@ background: transparent;
 	font-size: 1.25em;
 	font-weight: 300;
 	color: orange;
-}
-.line3-box {
-	width: 300px;
-	height: 400px;
+}.line3-box {
+	width: 298px;
+	height: 398px;
 	float: left;
 	overflow: hidden;
+}
+.line3-box:hover{
+	border:1px solid orange;
 }
 .line3-box-pic {
 	width: 300px;
@@ -206,10 +216,13 @@ background: transparent;
 	color: orange;
 }
 .line4-box {
-	width: 300px;
-	height: 400px;
+	width: 298px;
+	height: 398px;
 	float: left;
 	overflow: hidden;
+}
+.line4-box:hover{
+	border:1px solid orange;
 }
 .line4-box-pic {
 	width: 300px;
@@ -227,6 +240,7 @@ background: transparent;
 .line5 {
 	width: 1200px;
 	height: 500px;
+
 }
 .line5-head {
 	width: 1200px;
@@ -241,9 +255,8 @@ background: transparent;
 	height: 450px;
 	float: left;
 	overflow: hidden;
-	background: url(../pic/line5-left.jpg) no-repeat;
-	background-size: cover;
 }
+/*
 .line5-left-title {
 	width: 600px;
 	height: 50px;
@@ -253,14 +266,15 @@ background: transparent;
 	font-weight: 300;
 	color: #dddddd;
 }
+*/
 .line5-right {
 	width: 600px;
 	height: 450px;
 	float: left;
 	overflow: hidden;
-	background: url(../pic/line5-right.jpg) no-repeat;
-	background-size: contain;
+
 }
+/*
 .line5-right-title {
 	width: 600px;
 	height: 50px;
@@ -270,22 +284,25 @@ background: transparent;
 	font-weight: 300;
 	color: #8b4513
 }
+*/
 
 /*line6*/
 .line6 {
 	width: 1200px;
 	height: 450px;
 }
+/*
 .line6-head {
 }
+*/
 .line6-left {
 	width: 400px;
 	height: 450px;
 	float: left;
 	overflow: hidden;
-	background: url(../pic/line6-left.jpg) no-repeat;
-	background-size: cover;
+
 }
+/*
 .line6-left-title {
 	width: 400px;
 	height: 50px;
@@ -295,14 +312,15 @@ background: transparent;
 	font-weight: 300;
 	color: #dddddd;
 }
+*/
 .line6-right {
 	width: 800px;
 	height: 450px;
 	float: left;
 	overflow: hidden;
-	background: url(../pic/line6-right.jpg) no-repeat;
-	background-size: contain;
+
 }
+/*
 .line6-right-title {
 	width: 800px;
 	height: 50px;
@@ -312,15 +330,15 @@ background: transparent;
 	font-weight: 300;
 	color: #dddddd;
 }
-
+*/
 /*line7*/
 .line7 {
 	width: 1200px;
 	height: 550px;
 	overflow: hidden;
-	background: url(../pic/line7.jpg) no-repeat;
-	background-size: contain;
+
 }
+/*
 .line7-title {
 	width: 1200px;
 	height: 50px;
@@ -330,7 +348,7 @@ background: transparent;
 	font-weight: 300;
 	color: #8b4513
 }
-
+*/
 /*line8*/
 .line8 {
 	width: 1200px;
