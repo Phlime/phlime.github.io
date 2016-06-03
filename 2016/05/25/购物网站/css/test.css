@@ -76,23 +76,26 @@ background: transparent;
 .list {
 	margin-top: 20px;
 	margin-left: 200px;
+	width:1000px;
+	height: 25px;
 	font-size: 1.25em;
 	font-weight: 300;
-	color: #444444
+	color: #444444;
+	overflow: hidden;
 }
 .list-kind {
 	padding: 20px 20px 20px 20px;
 }
 .list-kind:hover {
-	color: inherit;
+	color: #444444;
 	background: #ff7f50
 }
 .search {
 	font-size: 1em;
 	margin: 0;
 	float: right;
-	min-height: 15px;
-	min-width: 50px;
+	height: 25px;
+	width: 200px;
 	border: 1px solid #d1d2d2;
 }
 
